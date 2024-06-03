@@ -33,6 +33,10 @@ kotlin {
             //implementation(libs.coroutines.core)
             api(libs.koin.core)
             implementation(libs.kotlinx.coroutines.core)
+            implementation(libs.kviewmodel.core)
+            implementation(libs.kviewmodel.compose)
+            implementation(libs.kviewmodel.odyssey)
+            runtimeOnly(libs.odyssey.core)
         }
         androidMain.dependencies {
             implementation(libs.ktor.client.okhttp)
